@@ -5,6 +5,8 @@
  */
 package arreglos;
 
+import Personas.Persona;
+
 
 
 /**
@@ -15,18 +17,19 @@ public class Vector extends Persona
 {
     private Persona [] v;
     private int i;
-
+    private int tam;
     public Vector(int t)
     {
       this.i=-1;
       v = new Persona[t];
+      this.tam =t;
     }
 
    
 
     public boolean vectorlleno()
     {
-      if (this.getI() > t )
+      if (this.getI() >= this.getTam()-1 )
          return true;
          else
          return false;
@@ -46,7 +49,7 @@ public class Vector extends Persona
  */
     public void insertar(Persona p)
     {
-      if (!(vectorlleno()))
+     // if (!(vectorlleno()))
       {
             setI(getI() + 1);
             v[i]=p;
@@ -116,6 +119,20 @@ public class Vector extends Persona
      */
     public void setI(int i) {
         this.i = i;
+    }
+
+    /**
+     * @return the tam
+     */
+    public int getTam() {
+        return tam;
+    }
+
+    /**
+     * @param tam the tam to set
+     */
+    public void setTam(int tam) {
+        this.tam = tam;
     }
 
 }

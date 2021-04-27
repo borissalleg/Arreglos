@@ -73,14 +73,18 @@ public class Arreglos {
                 switch (opcion) {
                     case 1:
                         System.out.println("Has seleccionado la opcion 1");
-                        {    
-                            Persona p = new Persona();  
-                            System.out.print("Digite Nombre de la persona "+"");
-                            p.setNombre(sc.next());
+                        {   if (!v.vectorlleno())
+                            {
+                                Persona p = new Persona();  
+                                System.out.print("Digite Nombre de la persona "+"");
+                                p.setNombre(sc.next());
 
-                            System.out.print("Digite Edad de la persona "+"");
-                            p.setEdad(sc.nextInt());
-                            v.insertar(p);
+                                System.out.print("Digite Edad de la persona "+"");
+                                p.setEdad(sc.nextInt());
+                                v.insertar(p);
+                            }
+                            else 
+                            System.out.print("El vector esta lleno");
                         }                          
                         break;
                     case 2:
@@ -92,7 +96,7 @@ public class Arreglos {
                         break;
                     case 3:
                         System.out.println("Has seleccionado la opcion 3");
-                        System.out.println("El vector tiene alamacenado "+v.getI()+1+" elementos de "+t+(-1));
+                        System.out.println("El vector tiene alamacenado "+(v.getI()+1)+" elementos de "+v.getTam());
                     
                         break;
                     case 4:

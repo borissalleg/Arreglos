@@ -5,7 +5,7 @@
  */
 package arreglos;
 
-import Personas.Persona;
+
 
 /**
  *
@@ -26,7 +26,7 @@ public class Vector extends Persona
 
     public boolean vectorlleno()
     {
-      if (this.getI() > 2 )
+      if (this.getI() > t )
          return true;
          else
          return false;

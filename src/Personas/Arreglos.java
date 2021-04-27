@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package arreglos;
+package Personas;
 
 import Personas.Persona;
+import arreglos.Vector;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -91,7 +92,7 @@ public class Arreglos {
                         break;
                     case 3:
                         System.out.println("Has seleccionado la opcion 3");
-                        System.out.println("El vector tiene alamacenado "+v.getI()+" elementos de "+t);
+                        System.out.println("El vector tiene alamacenado "+v.getI()+1+" elementos de "+t+(-1));
                     
                         break;
                     case 4:

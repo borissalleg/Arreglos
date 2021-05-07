@@ -52,7 +52,7 @@ public class Vector extends Persona
      // if (!(vectorlleno()))
       {
             setI(getI() + 1);
-            v[i]=p;
+             v[i]=p;
          // v[i].edad = e;
             
       }
